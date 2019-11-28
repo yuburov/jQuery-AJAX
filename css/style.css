@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.country {
+    overflow: hidden;
+    border-bottom: dotted 1px #444444;
+    margin-bottom: 1em;
+    padding-bottom: 3px;
+}
+
+.country a {
+    float: right;
+}

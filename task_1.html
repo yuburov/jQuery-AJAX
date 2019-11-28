@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home_work-67</title>
+</head>
+<body>
+    <div id="container"></div>
+    
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script>
+      let container = $('#container');
+      let intervalId = setInterval(function(){
+        let elem = document.createElement('div');
+        let element = $(elem);
+        element.addClass('element');
+        element.text(getRandomInRange(0,20))
+        container.append(element);
+        console.log(container[0])
+      }, 5000);
+
+    function getRandomInRange(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    </script>
+</body>
+</html>
